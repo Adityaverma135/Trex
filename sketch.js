@@ -103,7 +103,7 @@ function draw() {
     }
     
     //jump when the space key is pressed
-    if(keyDown("space")&& trex.y >= 100) {
+    if(mouseIsPressed()&& trex.y >= 160) {
         trex.velocityY = -12;
         jumpSound.play();
     }
@@ -202,7 +202,7 @@ function spawnClouds() {
     cloud.velocityX = -3;
     
      //assign lifetime to the variable
-    cloud.lifetime = 200;
+    cloud.lifetime = 250;
     
     //adjust the depth
     cloud.depth = trex.depth;
